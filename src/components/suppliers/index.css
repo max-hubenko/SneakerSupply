@@ -1,0 +1,17 @@
+#brands-div {
+    height: 162px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #7CB0E0 0%, #ACC5DC 100%);
+}
+#brands {
+    all: unset;
+
+    width: 870px;
+    height: 113px;
+    border-radius: 32px;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 50% 30%;
+}

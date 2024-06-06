@@ -1,0 +1,117 @@
+
+body {
+    height: 100vh;
+}
+
+#cart-container-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #E76036 0%, #7CB0E0 99.99%, #81361E 100%);
+}
+
+#cart-div {
+    width: 90%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cart-items-text {
+    text-align: center;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 45px;
+    margin: 20px;
+}
+#cart-items {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#cart-item-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#cart-summary {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#cart-placeholder-text {
+    text-align: center;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 45px;
+    margin: 18px;
+    visibility: hidden;
+}
+
+#summary-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 500px;
+    min-height: 620px;
+    border-radius: 27px;
+}
+#summary-text {
+    text-align: center;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 45px;
+    margin: 25px;
+    padding: 10px;
+}
+
+#summary-items-div {
+    margin-bottom: 20px;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#summary-items-div {
+    width: 80%;
+}
+
+#checkout-div {
+    display: flex;
+    background-color: #C0B7B7;
+    border-radius: 27px;
+    width: 50%;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+#checkout-text {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jockey One', sans-serif;
+    user-select: none;
+
+}
+
+#checkout-div-container {
+    display: flex;
+    justify-content: center;
+}
+
+#checkout-div:hover {
+    background-color: rgb(100, 100, 100);
+    border-radius: 27px;
+    width: 50%;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

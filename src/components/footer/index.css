@@ -1,0 +1,16 @@
+#footer-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    height: 95px;
+    width: 100%;
+}
+
+#footer-text {
+    
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+}

@@ -1,0 +1,92 @@
+body {
+    padding-top: 79px;
+}
+
+#catalog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#catalog-div {
+    width: 100%;
+    height: 170vh;
+    background: linear-gradient(180deg, #E76036 0%, #7CB0E0 99.99%, #81361E 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#catalog-grid-div {
+    margin: 5px;
+    margin-top: 10px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#catalog-selector {
+    margin-top: 20px;
+    width: 100vh;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.catalog-square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 60px;
+    background-color: white;
+}
+
+.catalog-square p {
+    font-family: 'Jockey One', sans-serif;
+    user-select: none;
+}
+
+.catalog-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.catalog-circle p {
+    font-family: sans-serif;
+    font-weight: bold;
+    user-select: none;
+}
+
+.catalog-circle:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.catalog-square:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+
+.catalog-circle.highlighted {
+    background-color: gray; /* Highlight color */
+    cursor: default;
+}
+
+.catalog-circle.highlighted p {
+    color: black;
+    cursor: default;
+}
+
+#catalog-footer {
+    width: 300px;
+}

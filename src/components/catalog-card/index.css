@@ -1,0 +1,62 @@
+#card-div {
+    background-color: #D9D9D9;
+    height: 370px;
+    width: 300px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#top-section-card {
+    background-color: white;
+    height: 232px;
+    width: 100%;
+}
+
+#top-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-text-top {
+    margin: 0;
+    padding: 5px;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 18px;
+}
+
+#brand-text {
+    padding: 5px;
+    padding-top: 0;
+    margin: 0;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 16px;
+}
+
+#add-button-div {
+    display: flex;
+    justify-content: center;
+}
+
+#add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 115px;
+    border-radius: 7px;
+    padding: 20px;
+    background-color: #B6B6B6;
+    margin-top: 20px;
+}
+
+#add-button:hover {
+    background-color: #7a7979;
+    transition-duration: 5ms;
+    user-select: none;
+    cursor: pointer;
+}
+
+#button-text {
+    padding: 0;
+    margin: 0;
+    font-family: 'Jockey One', sans-serif;
+}

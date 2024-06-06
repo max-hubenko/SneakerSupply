@@ -1,0 +1,142 @@
+.nav-div {
+    z-index: 10000;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content:space-between;
+    padding: 5px 0 5px 5px;
+    margin: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.logo-div {
+    align-self: center;
+    background: #E76036;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    height: 100%;
+    transform: scale(100%);
+    transition-duration: 500ms;
+}
+.logo-div:hover {
+    transform: scale(110%);
+    transition-duration: 500ms;
+
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+}
+
+#logo-text {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 29px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #FFFAFA;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-shadow: -1px 0, 0 1px, 1px 0, 0 -1px, -1px -1px, 1px 1px, -1px 1px, 1px -1px;
+}
+
+.right-nav-div {
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+
+.search-bar-div {
+    line-height: normal;
+    align-self: center;
+    height: 100%;
+    outline: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar {
+    height: 25px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.search-bar::placeholder {
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+}
+
+svg {
+    padding: 0 5px 0 5px;
+}
+
+#home {
+    display: block;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+    transform: scale(100%);
+    transition-duration: 500ms;
+}
+#home:hover {
+    transform: scale(120%);
+    transition-duration: 500ms;
+}
+
+#catalog {
+    display: block;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+    transform: scale(100%);
+    transition-duration: 500ms;
+}
+#catalog:hover {
+    transform: scale(120%);
+    transition-duration: 500ms;
+}
+
+#cart {
+    display: block;
+    transform: scale(100%);
+    transition-duration: 500ms;
+}
+#cart:hover {
+    transform: scale(120%);
+    transition-duration: 500ms;
+}

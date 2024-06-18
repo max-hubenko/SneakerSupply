@@ -1,23 +1,26 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import CartCard from "../../components/cart-card"
+import CheckoutPopup from "../../components/checkout-popup/index.jsx"
 import Footer from "../../components/footer"
 import Navbar from "../../components/navbar"
 import ScrollToTop from "../../components/scrollToTop"
 import SubItem from "../../components/sub-item"
 import "./cart.css"
+import 'animate.css'
 
 
-function Cart({cartItems}) {
+function Cart({cartItems,count,handleCartClick, handleCheckout}) {
      const items = cartItems
      const sum = items.reduce((accumulator, item) => accumulator + item.price, 0);
      const taxes = sum * .20;
-     const shipping = 7.99;
+     const shipping = items.length == 0 ? 0.00 : 7.99;
 
     return (
         <div id="cart-container-div">
             <ScrollToTop />
-            <Navbar/>
+            <CheckoutPopup />
+            <Navbar count={count}/>
             <div id="cart-div">
                 <div id="cart-items">
                     <div> <p id="cart-items-text"> CART ITEMS </p></div>
@@ -29,6 +32,7 @@ function Cart({cartItems}) {
                                 shoeName={item.name}
                                 price={item.price}
                                 brand={item.brand}
+                                handleClick={() => handleCartClick(index)}
                             />
                         ))}
                     </div>
@@ -51,7 +55,7 @@ function Cart({cartItems}) {
                                 <hr></hr>
                                 <SubItem name="total" price={taxes + shipping + sum} />
                                 <div id="checkout-div-container">
-                                    <div id="checkout-div"> <p id="checkout-text"> CHECKOUT </p> </div>
+                                    <div onClick={handleCheckout} id="checkout-div"> <p id="checkout-text"> CHECKOUT </p> </div>
                                 </div>
                                 
                             </div>

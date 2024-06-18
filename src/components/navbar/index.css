@@ -21,6 +21,7 @@
     height: 100%;
     transform: scale(100%);
     transition-duration: 500ms;
+    cursor: default;
 }
 .logo-div:hover {
     transform: scale(110%);
@@ -139,4 +140,28 @@ svg {
 #cart:hover {
     transform: scale(120%);
     transition-duration: 500ms;
+}
+
+#cart-item-count {
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    position: absolute;
+    right: -3px;
+    top: -8px;
+    padding: 2px;
+}
+
+#cart-item-count p {
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+#cart-item-count.hidden {
+    display: none;
 }

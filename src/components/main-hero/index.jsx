@@ -3,7 +3,10 @@ import "./index.css"
 function MainHero() {
     return (
         <>
-        <div className="Hero-div">
+        <div id="placeholder-div">
+            <p>placeholder</p>
+        </div>
+        <div className="Hero-div" id="first-hero-div">
             <div className="inner-hero-div">
                 <h1> FIND YOUR <br/>
                 PERFECT PAIR </h1>

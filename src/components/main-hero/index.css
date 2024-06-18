@@ -1,35 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jockey+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
 .Hero-div {
     padding: 30px;
     display: flex;
     background: linear-gradient(180deg, #E76036 0%, #9F2600 100%);
-    height: 65vh;
-    padding-top: 130px;
-}
-
-.Hero-div div{
-    width: 50%;
-}
-
-.inner-hero-div {
-    height: 450px;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.Hero-div div {
+    width: 50%;
+}
+
+.inner-hero-div {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+}
+
 h1 {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: italic;
     font-weight: 700;
     font-size: 44px;
     line-height: 53px;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     text-transform: uppercase;
     color: #FFFAFA;
+    margin: 0;
 }
 
 img {
@@ -37,7 +48,6 @@ img {
     width: 500px;
     height: 450px;
     border-radius: 32px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .banner-div {
@@ -47,16 +57,46 @@ img {
     justify-content: center;
     align-items: center;
 }
+
 #banner-text {
     font-family: 'Jockey One', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 45px;
-    display: flex;
-    align-items: center;
     text-align: center;
     text-transform: uppercase;
     color: #E76036;
+}
 
+#placeholder-div {
+    height: 100vh;
+    background-color: white;
+}
+
+#first-hero-div {
+    margin-top: 30px;
+}
+
+.Second-Hero-div {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #7CB0E0 0%, #ACC5DC 100%);
+    height: 75vh;
+}
+
+.Second-Hero-div div {
+    width: 50%;
+}
+
+#airmax95 {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+#travis1 {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#banner-text2 {
+    color: white;
 }

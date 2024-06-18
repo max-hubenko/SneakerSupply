@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './App.css'
 import SecondHero from '../../components/second-hero'
 import MainHero from '../../components/main-hero'
@@ -7,12 +8,12 @@ import Suppliers from '../../components/suppliers'
 import Footer from '../../components/footer'
 import ScrollToTop from '../../components/scrollToTop'
 
-function App() {
+function App({count}) {
 
   return (
     <>
       <ScrollToTop />
-      <Navbar/>
+      <Navbar count={count}/>
       <MainHero/>
       <SecondHero/>
       <ThirdHero/>

@@ -1,4 +1,5 @@
 import "./index.css"
+import airmax90 from "../../assets/Images/airmax90-backgorund.jpeg"
 
 function MainHero() {
     return (
@@ -12,7 +13,7 @@ function MainHero() {
                 PERFECT PAIR </h1>
             </div>
             <div className="inner-hero-div">
-                <img src="src/assets/Images/airmax90-backgorund.jpeg"/>
+                <img src={airmax90}/>
             </div>
         </div>
         <div className="banner-div">

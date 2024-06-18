@@ -1,4 +1,5 @@
 import "./index.css"
+import airmax95 from "../../assets/Images/airmax95.png"
 
 function SecondHero() {
     return (
@@ -6,7 +7,7 @@ function SecondHero() {
         
         <div className="Second-Hero-div">
             <div id="95-div" className="inner-hero-div">
-                <img id="airmax95" src="src/assets/Images/airmax95.png"/>
+                <img id="airmax95" src={airmax95}/>
             </div>
             <div className="inner-hero-div">
                 <h1> BEST IN CLASS </h1>

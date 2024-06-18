@@ -37,7 +37,7 @@ prices = soup.find_all("span", class_="LocalizedCurrency__Amount-sc-yoa0om-0 jDD
 images = soup.find_all("img", class_="BaseImage__StyledImage-sc-vydcjo-0 bccJtO Image__StyledImage-sc-1qwz99p-0 hNSrav GridCellProductImage__Image-sc-msqmrc-1 fyEOPv")
 
 # Open the output file in write mode
-with open("./scraper/catalog_scraped.json", "w") as f:
+with open("./public/catalog_scraped.json", "w") as f:
     sneakers = []
     for name, price, image in zip(sneaker_names, prices, images):
         price_string = price.get_text()
